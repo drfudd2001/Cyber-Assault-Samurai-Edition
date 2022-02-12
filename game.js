@@ -1,0 +1,2 @@
+// Create functionality for game to allow losing and winning conditions along with board area and sizing based on browser utilized for playing
+// I will attempt to create a save-state that allows player to continue playing from last known position and progress.

@@ -1,0 +1,1 @@
+// Create functions to address the logic for the snake movement, growth, and collision
