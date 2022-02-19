@@ -1,7 +1,7 @@
 // Establishes the size of the game board
 const GRID_SIZE = 21
 
-// Exports the function that designates the ramdom positions that are used for the "food".
+// Exports the function that designates the random positions that are used for the "food".
 export function randomGridPosition() {
     return {
         x: Math.floor(Math.random() *GRID_SIZE) + 1,

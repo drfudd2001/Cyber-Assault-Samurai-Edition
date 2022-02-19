@@ -6,8 +6,7 @@ import {getInputDirection} from "./input.js"
 // Exports the "snake's" speed, this can be modified to speed up the game.
 export const SNAKE_SPEED = 5
 
-/* Creates the "snake" body starting position and prevents it from
-creating new body segments before it consumes any "food". */
+// Creates the "snake" body starting position and prevents it from creating new body segments before it consumes any "food". 
 const snakeBody = [{x: 11, y: 11}]
 let newSegments = 0
 
@@ -34,14 +33,12 @@ export function draw(gameBoard) {
   })
 }
 
-/*Exports logic for the creation of new segments of the "snake" with the 
-consumption of "food". */
+// Exports logic for the creation of new segments of the "snake" with the consumption of "food". 
 export function expandSnake(amount) {
   newSegments += amount
 }
 
-/* Exports the collision logic for the "snake" by verifying body position and 
-head position */
+// Exports the collision logic for the "snake" by verifying body position and head position 
 export function onSnake(position, {ignoreHead = false} = {}) {
   return snakeBody.some((segment, index) => {
     if (ignoreHead && index === 0) return false
@@ -62,7 +59,7 @@ function equalPositions(pos1, pos2) {
   return pos1.x === pos2.x && pos1.y === pos2.y
 }
 
-// EStablishes logic for the creation of new body parts for the "snake".
+// Establishes logic for the creation of new body parts for the "snake".
 function addSegments() {
   for (let i = 0; i < newSegments; i++) {
     snakeBody.push({...snakeBody[snakeBody.length - 1]})
