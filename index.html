@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Snake</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="game.js" defer type="module"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Snake Neon Revolt</title>
+    <link rel="stylesheet" href="styles.css">
+    <!---<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
 </head>
 <body>
-  <div id="game-board"></div>
+    <div class="body">
+        <div id="scoreBox">Score: 0</div>
+        <div id="hiscoreBox">Hi-Score: 0</div>
+        <div id="board"></div>
+    </div>
+    <div class="info">
+        <div class="title">
+            <h1>Snake Snake Revolt</h1>
+        </div>
+        <div class="music">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1cNlesR6OOLlySnWuBrzkM?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          
+        </div>
+        <p class="controls">To start a game tap anywhere on the <br> screen and press any arrow key. </p>
+        <p class="cite">Music by bensound.com<br>Backgroung Image from wallpapertip.com<br>Game sounds from mixkit.co</p>
+    </div>
 </body>
+<footer>
+  <audio controls id="music">
+    <p>Press play to start game music</p>
+    <source src="music/game-music.mp3" type="audio/mpeg">
+</footer>
+<script src="game.js"></script>
 </html>
