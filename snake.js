@@ -1,6 +1,6 @@
 // Create functions to address the logic for the snake movement, growth, and collision.
 
-// Imports game controls from the input file.
+/*// Imports game controls from the input file.
 import {getInputDirection} from "./input.js"
 
 // Exports the "snake's" speed, this can be modified to speed up the game.
@@ -65,4 +65,4 @@ function addSegments() {
     snakeBody.push({...snakeBody[snakeBody.length - 1]})
   }
   newSegments = 0
-}
+}*/

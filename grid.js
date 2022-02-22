@@ -1,4 +1,4 @@
-// Establishes the size of the game board
+/* Establishes the size of the game board
 const GRID_SIZE = 21
 
 // Exports the function that designates the random positions that are used for the "food".
@@ -15,4 +15,4 @@ export function outsideGrid(position) {
         position.x < 1 || position.x > GRID_SIZE ||
         position.y < 1 || position.y > GRID_SIZE
     )
-}
+} */

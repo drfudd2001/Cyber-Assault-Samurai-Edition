@@ -1,9 +1,9 @@
-// Establishes movement variables.
+/* Establishes movement variables.
 let inputDirection = {x: 0, y: 0}
 let lastInputDirection = {x: 0, y: 0}
 
 /* Movement control event listeners and prevents
-the "snake" from moving in the same direction. */
+the "snake" from moving in the same direction. 
 window.addEventListener('keydown', e => {
     switch (e.key) {
         case 'ArrowUp':
@@ -29,4 +29,4 @@ window.addEventListener('keydown', e => {
 export function getInputDirection() {
     lastInputDirection = inputDirection
     return inputDirection
-}
+}*/
