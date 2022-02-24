@@ -1,6 +1,6 @@
 /* Create styling for the game board, the snake, and the food initially; will include sprite art later depending on my skill level */
 
-/*@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url(background.png);
+    background-image: url(assets/background.png);
     min-height: 100vh;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
@@ -40,7 +40,7 @@ body {
     text-shadow: 0 0 0.125em var(--clr-neon), 0 0 0.45em currentColor;
 }
 
-#hiscoreBox {
+#highScoreBox {
     position: absolute;
     top: 95px;
     right: 37px;
@@ -76,20 +76,21 @@ body {
     float: left;
     transform: translate(-453px, 5px);
     position: absolute;
-    /* box-shadow: 0 0 0.1vw 0.3vw #fff7f7, 0 0 3vw 0.3vw #7528d6, inset 0 0 1vw 0.3vw #7528d6, inset 0 0 0.3vw 0.1vw #fff7f7; */
 }
 
-.title {
+#title {
     box-shadow: 0 0 0.1vw 0.3vw #fff7f7, 0 0 3vw 0.3vw #7528d6, inset 0 0 1vw 0.3vw #7528d6, inset 0 0 0.3vw 0.1vw #fff7f7;
     transform: translate(0px, -51px);
+    border-radius: 10px;
     color: #fff;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     text-shadow: 0 0 0.125em var(--clr-neon), 0 0 0.45em currentColor;
 }
 
-.music {
-    box-shadow: 0 0 0.1vw 0.3vw #fff7f7, 0 0 3vw 0.3vw #7528d6, inset 0 0 1vw 0.3vw #7528d6, inset 0 0 0.3vw 0.1vw #fff7f7;
+#spotify {
+  border-radius: 15px;   
+  box-shadow: 0 0 .1vw .3vw #fff7f7, 0 0 3vw 0.3vw #7528d6, inset 0 0 1vw 0.3vw #7528d6, inset 0 0 0.3vw 0.1vw #fff7f7;
 }
 
 .controls {
@@ -106,5 +107,16 @@ body {
   font-family: 'Poppins', sans-serif;
   transform: translateY(32px);
   font-size: 10px;
-  position: absolute; left:80px; top:500px;
+  position: absolute; left:0px; top:540px;
+}
+
+footer {
+  position: absolute;
+  top: 650px;
+  right: 0px;
+}
+
+#music {
+  border-radius: 30px;   
+  box-shadow: 0 0 .1vw .3vw #fff7f7, 0 0 3vw 0.3vw #7528d6, inset 0 0 1vw 0.3vw #7528d6, inset 0 0 0.3vw 0.1vw #fff7f7;
 }
