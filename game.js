@@ -8,7 +8,7 @@ let inputDir = { x: 0, y: 0 };
 const foodSound = new Audio('assets/food.wav');
 const gameOverSound = new Audio('assets/game-over.wav');
 const moveSound = new Audio('assets/move.wav');
-const musicSound = new Audio('assets/game-music.mp3');
+//const musicSound = new Audio('assets/game-music.mp3');
 let speed = 10;
 let score = 0;
 let level = 0
@@ -48,11 +48,11 @@ function gameEngine() {
     // Part 1: Updating the snake array & Food
     if (isCollide(snakeArr)) {
         gameOverSound.play();
-        musicSound.pause();
+        //musicSound.pause();
         inputDir = { x: 0, y: 0 };
         alert("Game Over Samurai. Press any key to get those Corpos again!");
         snakeArr = [{ x: 13, y: 15 }];
-        musicSound.play();
+        //musicSound.play();
         score = 0;
     }
     // If you have eaten the food, increment the score and regenerate the food
