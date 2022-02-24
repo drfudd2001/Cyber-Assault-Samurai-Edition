@@ -102,7 +102,7 @@ function gameEngine() {
 }
 
 // Main logic starts here
-musicSound.play();
+//musicSound.play();
 let highScore = localStorage.getItem("high score");
 if (highScore === null) {
     highScoreVal = 0;
