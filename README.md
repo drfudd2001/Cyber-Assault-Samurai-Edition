@@ -6,10 +6,11 @@ Milestone #1:
     Create files with pseudo code explaining desired functionality and needs. ✔️
 
 Milestone #2:
-  Create a working build that works on browser without need of assets. ✔️
+    Create a working build that works on browser without need of assets. ✔️
  
 Milestone #3:
-  Create collision logic for game. ✔️
+    Create collision logic for game. ✔️
   
 Milestone #4:
-  Incorporate sprites to game assets. 
+    ~~Incorporate sprites to game assets.~~
+    Create CSS changes to improve the look of the game, adding music, sound effects and background image. ✔️

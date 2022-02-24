@@ -1,12 +1,14 @@
 /* Create functionality for game to allow losing and winning conditions along with board area and sizing based on browser utilized 
 for playing. I will attempt to create a save-state that allows player to continue playing from last known position and progress. */
 
+// Game was created with the assistance of a tutorial by Web Dev Simplified (YouTube video: https://www.youtube.com/watch?v=QTcIXok9wNY)
+
 // Game Constants & Variables
 let inputDir = { x: 0, y: 0 };
-const foodSound = new Audio('music/food.wav');
-const gameOverSound = new Audio('music/game-over.wav');
-const moveSound = new Audio('music/move.wav');
-const musicSound = new Audio('music/game-music.mp3');
+const foodSound = new Audio('assets/food.wav');
+const gameOverSound = new Audio('assets/game-over.wav');
+const moveSound = new Audio('assets/move.wav');
+const musicSound = new Audio('assets/game-music.mp3');
 let speed = 10;
 let score = 0;
 let level = 0
@@ -20,7 +22,6 @@ food = { x: 6, y: 7 };
 // Game Functions
 function main(time) {
     window.requestAnimationFrame(main);
-    // console.log(time)
     if ((time - lastDrawTime) / 1000 < 1 / speed) {
         return;
     }
@@ -49,7 +50,7 @@ function gameEngine() {
         gameOverSound.play();
         musicSound.pause();
         inputDir = { x: 0, y: 0 };
-        alert("Game Over Samurai. Press any key to play again!");
+        alert("Game Over Samurai. Press any key to get those Corpos again!");
         snakeArr = [{ x: 13, y: 15 }];
         musicSound.play();
         score = 0;
@@ -139,4 +140,4 @@ window.addEventListener('keydown', e => {
         default:
             break;
     }
-});
+})
