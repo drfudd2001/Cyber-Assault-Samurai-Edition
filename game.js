@@ -13,7 +13,6 @@ let score = 0;
 let level = 0
 let lastDrawTime = 0;
 let snakeArr = [{ x: 13, y: 15 }];
-
 food = { x: 6, y: 7 };
 
 // Game Functions
@@ -21,11 +20,13 @@ function main(time) {
     window.requestAnimationFrame(main);
     if ((time - lastDrawTime) / 1000 < 1 / speed) {
         return;
-    }
+    };
     lastDrawTime = time;
     gameEngine();
+    if (isCollide) {
+        scoreBox.innerHTML = "Score: " + score;
+    };
 }
-
 
 function isCollide(snake) {
     // If you bump into yourself 
@@ -97,6 +98,7 @@ function gameEngine() {
 }
 
 // Main logic starts here
+score = 0;
 let highScore = localStorage.getItem("high score");
 if (highScore === null) {
     highScoreVal = 0;
@@ -108,7 +110,7 @@ if (highScore === null) {
 
 window.requestAnimationFrame(main);
 window.addEventListener('keydown', e => {
-    inputDir = { x: 0, y: 1 } // Start the game
+    inputDir = { x: 0, y: 1 }
     moveSound.play();
     switch (e.key) {
         case "ArrowUp":

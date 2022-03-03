@@ -76,6 +76,7 @@ body {
     float: left;
     transform: translate(-453px, 5px);
     position: absolute;
+    margin-right: 500px;
 }
 
 #title {
@@ -107,16 +108,13 @@ body {
   font-family: 'Poppins', sans-serif;
   transform: translateY(32px);
   font-size: 10px;
-  position: absolute; left:0px; top:540px;
-}
-
-footer {
-  position: absolute;
-  top: 650px;
-  right: 0px;
+  position: absolute; left:0px; top:440px;
 }
 
 #music {
   border-radius: 30px;   
   box-shadow: 0 0 .1vw .3vw #fff7f7, 0 0 3vw 0.3vw #7528d6, inset 0 0 1vw 0.3vw #7528d6, inset 0 0 0.3vw 0.1vw #fff7f7;
+  transform: translateY(32px);
+  font-size: 10px;
+  position: absolute; left:0px; top:150px;
 }
